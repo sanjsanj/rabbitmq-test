@@ -12,12 +12,11 @@
 
 ## Run
 
-1 - Basic send
+### Basic send
 
 `$ node send.js`
 
-
-2 - Basic receive
+### Basic receive
 
 ```
 // In a separate console
@@ -25,8 +24,7 @@
 $ node receive.js`, to exit `ctrl + C
 ```
 
-
-3 - Work queue 
+### Work queue 
 
 ```
 // In separate consoles
@@ -35,8 +33,7 @@ $ node worker.js
 $ node new_task.js
 ```
 
-
-4 - Round robin queue
+### Round robin queue
 
 ```
 // In separate consoles
@@ -49,5 +46,6 @@ $ node worker.js
 $ node new_task.js First message
 $ node new_task.js Second message
 $ node new_task.js Third message
+$ node new_task.js Fourth message
 ```
 
