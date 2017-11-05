@@ -38,3 +38,18 @@ $ node receive.js`, to exit `ctrl + C
 $ node worker.js
 $ node new_task.js
 ```
+
+4 - Round robin queue
+
+```
+// In separate consoles
+
+$ node worker.js
+$ node worker.js
+
+// And in the third console
+
+$ node new_task.js First message
+$ node new_task.js Second message
+$ node new_task.js Third message
+```
