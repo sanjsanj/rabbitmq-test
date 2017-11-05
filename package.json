@@ -1,0 +1,23 @@
+{
+  "name": "rabbitmq-test",
+  "version": "1.0.0",
+  "description": "rabbitmq",
+  "main": "index.js",
+  "dependencies": {
+    "amqplib": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node send.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjsanj/rabbitmq-test.git"
+  },
+  "author": "sanjsanj@hotmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanjsanj/rabbitmq-test/issues"
+  },
+  "homepage": "https://github.com/sanjsanj/rabbitmq-test#readme"
+}
