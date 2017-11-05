@@ -1,5 +1,7 @@
 # rabbitmq
 
+[Official RabbitMQ docs](https://www.rabbitmq.com/getstarted.html)
+
 ## Setup
 
 1 - Install [Erlang](http://www.erlang.org/downloads)
