@@ -23,7 +23,7 @@
 ```
 // In a separate console
 
-$ node receive.js`, to exit `ctrl + C
+$ node receive.js`, to exit ctrl + C
 ```
 
 ### Work queue 
