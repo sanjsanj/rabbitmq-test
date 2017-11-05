@@ -1,11 +1,5 @@
 # rabbitmq
 
-1 - 
-
-2 - 
-
-3 - Work queues
-
 ## Setup
 
 1 - Install [Erlang](http://www.erlang.org/downloads)
@@ -22,6 +16,7 @@
 
 `$ node send.js`
 
+
 2 - Basic receive
 
 ```
@@ -29,6 +24,7 @@
 
 $ node receive.js`, to exit `ctrl + C
 ```
+
 
 3 - Work queue 
 
@@ -38,6 +34,7 @@ $ node receive.js`, to exit `ctrl + C
 $ node worker.js
 $ node new_task.js
 ```
+
 
 4 - Round robin queue
 
@@ -53,3 +50,4 @@ $ node new_task.js First message
 $ node new_task.js Second message
 $ node new_task.js Third message
 ```
+

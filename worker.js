@@ -5,7 +5,8 @@ amqp.connect('amqp://localhost', (err, conn) => {
     const queue = 'task_queue';
     
     ch.assertQueue(queue, { durable: true });
-    
+    ch.prefetch(1);
+
     console.log(`[*] Waiting for messages in ${queue}. To exit press CTRL+C`);
     
     ch.consume(queue, (msg) => {
@@ -16,7 +17,8 @@ amqp.connect('amqp://localhost', (err, conn) => {
     
       setTimeout(() => {
         console.log("[x] Done");
-      }, secs * 1000);
-    }, {noAck: true});
+        ch.ack(msg);
+      }, secs * 1000)
+    }, {noAck: false});
   })
 })
