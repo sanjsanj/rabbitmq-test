@@ -1,5 +1,11 @@
 # rabbitmq
 
+1 - 
+
+2 - 
+
+3 - Work queues
+
 ## Setup
 
 1 - Install [Erlang](http://www.erlang.org/downloads)
@@ -12,12 +18,23 @@
 
 ## Run
 
-Run automatically `$ npm run start`
+1 - Basic send
 
-Run manually:
+`$ node send.js`
 
-1 - `$ node send.js`
+2 - Basic receive
 
-2 - In another console tab `$ node receive.js`
+```
+// In a separate console
 
-To exit `ctrl + C`
+$ node receive.js`, to exit `ctrl + C
+```
+
+3 - Work queue 
+
+```
+// In separate consoles
+
+$ node worker.js
+$ node new_task.js
+```
