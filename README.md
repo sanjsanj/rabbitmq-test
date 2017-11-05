@@ -8,6 +8,16 @@
 
 3 - Make sure you have a recent version of [Node](https://nodejs.org/en/)
 
+4 - Install the necessary packages `$ npm install`
+
 ## Run
 
-`$ npm run start`
+Run automatically `$ npm run start`
+
+Run manually:
+
+1 - `$ node send.js`
+
+2 - In another console tab `$ node receive.js`
+
+To exit `ctrl + C`
