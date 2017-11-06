@@ -55,3 +55,13 @@ $ node new_task.js Fourth message
 $ node receive_logs.js
 $ node emit_log.js
 ```
+
+### Routing
+
+```
+$ node receive_logs_direct.js warning error
+
+$ node emit_log_direct.js warning "A warning"
+$ node emit_log_direct.js error "An error"
+$ node emit_log_direct.js info "Just info"
+```
