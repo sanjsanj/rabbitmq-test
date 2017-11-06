@@ -16,21 +16,19 @@
 
 ### Basic send
 
-`$ node send.js`
+```
+$ node send.js
+```
 
 ### Basic receive
 
 ```
-// In a separate console
-
-$ node receive.js`, to exit ctrl + C
+$ node receive.js
 ```
 
 ### Work queue 
 
 ```
-// In separate consoles
-
 $ node worker.js
 $ node new_task.js
 ```
@@ -51,3 +49,9 @@ $ node new_task.js Third message
 $ node new_task.js Fourth message
 ```
 
+### Publish/Subscribe
+
+```
+$ node receive_logs.js
+$ node emit_log.js
+```
