@@ -17,20 +17,20 @@
 ### Basic send
 
 ```
-$ node send.js
+$ node 01_send/send.js
 ```
 
 ### Basic receive
 
 ```
-$ node receive.js
+$ node 02_receive/receive.js
 ```
 
 ### Work queue 
 
 ```
-$ node worker.js
-$ node new_task.js
+$ node 03_work_queue/worker.js
+$ node 03_work_queue/new_task.js
 ```
 
 ### Round robin queue
@@ -38,30 +38,39 @@ $ node new_task.js
 ```
 // In separate consoles
 
-$ node worker.js
-$ node worker.js
+$ node 03_work_queue/worker.js
+$ node 03_work_queue/worker.js
 
 // And in the third console
 
-$ node new_task.js First message
-$ node new_task.js Second message
-$ node new_task.js Third message
-$ node new_task.js Fourth message
+$ node 03_work_queue/new_task.js First message
+$ node 03_work_queue/new_task.js Second message
+$ node 03_work_queue/new_task.js Third message
+$ node 03_work_queue/new_task.js Fourth message
 ```
 
 ### Publish/Subscribe
 
 ```
-$ node receive_logs.js
-$ node emit_log.js
+$ node 04_publish_subscribe/receive_logs.js
+$ node 04_publish_subscribe/emit_log.js
 ```
 
 ### Routing
 
 ```
-$ node receive_logs_direct.js warning error
+$ node 05_routing/receive_logs_direct.js warning error
 
-$ node emit_log_direct.js warning "A warning"
-$ node emit_log_direct.js error "An error"
-$ node emit_log_direct.js info "Just info"
+$ node 05_routing/emit_log_direct.js warning "A warning"
+$ node 05_routing/emit_log_direct.js error "An error"
+$ node 05_routing/emit_log_direct.js info "Just info"
+```
+
+### Topics
+
+```
+$ node 06_topics/receive_logs_topic.js "*.critical"
+
+$ node 06_topics/emit_log_topic.js "warning" "Just a warning"
+$ node 06_topics/emit_log_topic.js "error.critical" "Matches"
 ```
