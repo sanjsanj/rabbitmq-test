@@ -74,3 +74,13 @@ $ node 06_topics/receive_logs_topic.js "*.critical"
 $ node 06_topics/emit_log_topic.js "warning" "Just a warning"
 $ node 06_topics/emit_log_topic.js "error.critical" "Matches"
 ```
+
+### Remote Procedure Call
+
+```
+$ node 07_remote_procedure_call/rpc_server.js
+
+$ node 07_remote_procedure_call/rpc_client.js 5
+$ node 07_remote_procedure_call/rpc_client.js 5
+$ node 07_remote_procedure_call/rpc_client.js 21
+```
