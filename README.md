@@ -1,4 +1,4 @@
-# rabbitmq
+# RabbitMQ
 
 [Official RabbitMQ docs](https://www.rabbitmq.com/getstarted.html)
 
@@ -16,26 +16,26 @@
 
 ## Run
 
-### Basic send
+### Basic Send
 
 ```
 $ node 01_send/send.js
 ```
 
-### Basic receive
+### Basic Receive
 
 ```
 $ node 02_receive/receive.js
 ```
 
-### Work queue 
+### Work Queue 
 
 ```
 $ node 03_work_queue/worker.js
 $ node 03_work_queue/new_task.js
 ```
 
-### Round robin queue
+### Round-Robin Queue
 
 ```
 // In separate consoles
