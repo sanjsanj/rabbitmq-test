@@ -12,6 +12,8 @@
 
 4 - Install the necessary packages `$ npm install`
 
+5 - If a message bus isn't working then stop and re-start the RabbitMQ service and try again
+
 ## Run
 
 ### Basic send
